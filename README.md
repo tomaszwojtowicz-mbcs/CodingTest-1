@@ -1,29 +1,6 @@
 # Software Engineer Technical Test
 
-## Purpose and Instructions
-
-### Purpose
-
-As it is difficult to fully assess somebody’s abilities at an interview, particularly their programming skills, we give a small programming exercise to all potential recruits. The problem is a fairly simple one, which should be completed in the applicant’s own time.
-
-This is an opportunity for the candidate to show their engineering knowledge and craft work.  We are looking for engineering best practice. The test will be scored accordingly. 
-
-This is a very important part of our hiring process. Therefore we recommend that candidates give this adequate consideration and address this task as they would do for any other professional assignments in their current workplace.
-
-### Instructions 
-
--   Programming language: Use any object-oriented language, however our preference is C#.  
--   We use GitHub to host these tests to create a modern practical engineering experience. Please complete this exercise and create a pull request containing your solution 
--   We recommend you create a development branch for your development and from this create a final pull request to the master branch for review
--   We would much prefer that you submit a complete software implementation that demonstrates modern engineering best practices.  However we also appreciate that to provide a complete solution we may be expecting too much of the candidates time. If you are pressed for time, we recommend you use the pull request to comment on areas that, given more time, you would address or have done differently. 
--   Time or other constraints: We are looking for a solution that is simple and well-structured. The suggested duration of this exercise is around 2-4 hours.  
--   Please update the RUNME.MD file with instructions how to run your application 
-
-**Please note that your submission must only contain your own work.  Under no circumstances should your submission contain any content owned (in whole or in part) by a third party except where you are expressly permitted to do so by the relevant third party, for example, open-source library creators.**
-
-## Exercise
-
-### Background
+## Background
 
 One of the major jobs that we do is claims reserving, which involves assessing how much money is likely to be paid in future in respect of the claims that arise from a set of insurance policies that have already been taken out. The statistical analysis of this is based around data triangles of payment figures for the sum of previous claims.
  
@@ -65,11 +42,11 @@ The accumulated version of the above triangle is:
 	║                │   1997   ║ 120 │        ?       │        ?       ║ 
 	╚═══════════════════════════╩═══════════════════════════════════════╝
 
-### The Problem
+## The Problem
 
 You are required to create a program to read in incremental claims data from a comma-separated text file, to accumulate the data and output the results to a different comma-separated text file. This process represents the creation of the cumulative data triangle from the incremental data triangle above.
 
-#### Example Input Data
+### Example Input Data
 
 A short input file might contain the following:
 
@@ -90,7 +67,7 @@ A short input file might contain the following:
 This example file contains two triangles – one for a product called 'Comp' and one for a product called 'Non-Comp'.  
 The first row contains column headings, and the subsequent rows contain the data. For example, accidents occurring on the Non-Comp product in 1990, 45.2 was paid in 1990, 64.8 was paid in 1991 and 37 was paid in 1993.
 
-#### Example Output Data
+### Example Output Data
 
 The output file corresponding to the above input file would be:
 
@@ -101,7 +78,7 @@ The output file corresponding to the above input file would be:
 The first line gives the earliest origin year (i.e. 1990) and the number of development years (in this case ranging from 1990 through to 1993 i.e. 4).  
 Subsequently there is a line for each triangle. The first field in the line gives the name of the product. The subsequent fields are the accumulated triangle values.
 
-### General Considerations
+## General Considerations
 
 Below are some hints to help with this exercise. 
 -   Demonstrate engineering best practice 
@@ -110,7 +87,7 @@ Below are some hints to help with this exercise.
 -   The example input data file given is very ‘clean’. In practice data files may contain errors or the data may be in an unexpected format
 -   Incremental values in the input data may have been left out of the input file if they are zero. Origin years with no claims may have been left out of the input file
 
-#### Running instructions
+## Running instructions
 
 Once compliled, execute the binary produced without any command line parameters.
 
